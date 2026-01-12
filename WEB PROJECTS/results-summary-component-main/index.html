@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container{
+      display: flex;
+    }
+    .left{
+      background-image: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+      flex: 1;
+      padding: 40px;
+      border-radius: 15px;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 200px;
+    }
+    .right{
+      background-color: aliceblue;
+      flex: 1;
+      padding: 30px;
+      border-radius: 15px;
+      width: 200px;
+    }
+    .round{
+      background-image: linear-gradient(to bottom, hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+      border-radius: 50%;
+      padding: 20px 50px;
+    }
+    .red{
+      background-color: hsl(0, 100%, 92%);
+      color: hsl(0, 94%, 65%);
+      border-radius: 10px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .yellow{
+      background-color: hsl(39, 100%, 89%);
+      color: hsl(39, 100%, 56%);
+      border-radius: 10px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .green{
+      background-color: hsl(166, 100%, 91%);
+      color: hsl(166, 100%, 37%);
+      border-radius: 10px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .purpule{
+      background-color: hsl(0, 100%, 92%);
+      color: hsl(0, 94%, 65%);
+      border-radius: 10px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+    }
+    .paragraph{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .button{
+      width: 200px;
+      height: 40px;
+      border-radius: 20px;
+      background-image: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+      border: none;
+      color: white;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <p>Your Result</p>
+      <div class="round">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+      <h2>Great</h2>
+      <p class="paragraph">You scored higher than 65% <br>of the people who have taken <br>these tests.</p>
+    </div>
+    <div class="right">
+      <b>Summary</b>
+      <div class="red">
+        <p>Reaction</p>
+        <p>80 / 100</p>
+      </div>
+      <div class="yellow">
+        <p>Memory</p>
+        <p>92 / 100</p>
+      </div>
+      <div class="green">
+        <p>Verbal</p>
+        <p>61 / 100</p>
+      </div>
+      <div class="purpule">
+        <p>Visual</p>
+        <p>72 / 100</p>
+      </div>
+      <button class="button">Continue</button>
+    </div>
+  </div>
+
+</body>
+</html>
